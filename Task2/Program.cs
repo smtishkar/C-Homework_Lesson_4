@@ -8,6 +8,15 @@ Console.Clear();
 Console.Write("Введите положительное число: ");
 int num = int.Parse(Console.ReadLine());
 
+while (num < 0)
+{
+    if (num < 0)
+    {
+        Console.Write("Введите ПОЛОЖИТЕЛЬНОЕ число: ");
+        num = int.Parse(Console.ReadLine());
+    }
+}
+
 int GetSum(int number)
 {
     int sum = 0;
